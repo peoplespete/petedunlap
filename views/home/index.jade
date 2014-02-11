@@ -1,6 +1,104 @@
 extends ../template/layout
 
 block content
-  .row
-    .small-12.columns
-      h1 Home Page
+  //Navigation
+  #navigation.fixed.contain-to-grid
+    nav.top-bar(data-topbar='data-topbar')
+      ul.title-area
+        //Title Area
+        li.name
+          h1
+            a(href='#')
+              | petedunlap.com
+  //End Top Bar
+  #main.row
+    .large-12.columns
+      //Content Slider
+      .row
+        .large-12.hide-for-small
+          #featured(data-orbit='data-orbit')
+            img(src='/images/grocery.png', alt='Grocery List Maker')
+            img(src='/images/calendar.png', alt='Grocery List Maker')
+            img(src='/images/grocery.png', alt='Grocery List Maker')
+            img(src='/images/grocery.png', alt='Grocery List Maker')
+      //End Content Slider
+      //Mobile Header
+      .row
+        .large-12.columns.show-for-small
+          img(src='http://placehold.it/1200x700&text=Mobile Header')
+      br
+      //End Mobile Header
+      .row
+        .large-12.columns
+          .row
+            //Shows
+            #about_pete.large-5.small-12.columns
+              h4.heading about pete
+              hr
+              .panel
+                h5
+                  a(href='#') Post Title 1
+                h6.subheader
+                  | Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
+                h6
+                  a(href='#') Read More »
+            //End Shows
+            //Image
+            #headshot.large-2.small-6.columns
+              img(src='/images/headshot.png')
+            //End Image
+            //Feed
+            #philosophy.large-5.small-12.columns
+              h4 philosophy
+              hr
+              .panel
+                h5
+                  a(href='#') Post Title 1
+                h6.subheader
+                  | Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
+                h6
+                  a(href='#') Read More »
+              //- .panel.hide-for-small
+              //-   h5
+              //-     a(href='#') Post Title 2 »
+              //- .panel.hide-for-small
+              //-   h5
+              //-     a(href='#') Post Title 3 »
+              //- a.right(href='#') Go To Blog »
+            //End Feed
+      //End Content
+      //Footer
+      footer.row
+        .large-12.columns
+          hr
+          .row
+            .large-6.columns
+              p © Copyright 2014 Pete Dunlap.
+            .large-6.small-12.columns
+              ul.inline-list.right
+                li
+                  a(href='https://github.com/peoplespete', target='_blank') GITHUB LINK
+                li
+                  a(href='http://www.linkedin.com/in/petedunlap1', target='_blank') LINKED IN LINK
+                li
+                  a(href='mailto:petedunlap@gmail.com', target='_blank') GMAIL
+  //-     //
+  //-        End Footer
+  //- script
+  //-   document.write('<script src=js/vendor/' +
+  //-   ('__proto__' in {} ? 'zepto' : 'jquery') +
+  //-   '.js><\\/script>')
+  //- script(src='js/foundation.min.js')
+  //- script
+  //-   $(document).foundation();
+  //- //
+  //-    End Footer
+
+  //- section#topBar
+  //-   .row
+  //-     .small-12.columns
+  //-       h1 yo i should have nav here
+  //- section#main
+  //-   .row
+  //-     .small-12.columns
+  //-       h2 stuff
