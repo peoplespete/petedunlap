@@ -1,22 +1,49 @@
 @base: rgba(255, 255, 255, 0.8);
+// @import url(http://fonts.googleapis.com/css?family=Chango);
+// @import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+// @import url(http://fonts.googleapis.com/css?family=Walter+Turncoat);
+@import url(http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
+
 
 body{
+  font-family: 'Sue Ellen Francisco', cursive;
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'Sue Ellen Francisco', cursive;
+  }
+
   // background-color: @base;
   background: url('/images/background.png');
+  background-repeat: no-repeat;
 
   #navigation{
       background-color: rgba(150, 150, 150, 1);
+      height: 70px;
     .top-bar{
       background-color: rgba(150, 150, 150, 1);
+    }
+    a{
+      padding-top: 20px;
+      font-size: 4em;
+      font-weight: bold;
+      color: pink;
     }
   }
   #main{
     background: rgba(255, 255, 255, 0.5);
+    .heading{
+      font-size: 3em;
+      font-weight: bold;
+    }
+    h6{
+      font-size: 2em;
+    }
     #about_pete{
-      // margin-left: -50px;
-      // margin-right: -50px;
-      // padding-left: 0;
-      // padding-right: -30;
+      h4.heading{
+      text-align: right;
+      }
+      h6.subheader{
+        text-align: right;
+      }
     }
     #philosophy{
       // margin-left: -50px;
@@ -32,10 +59,16 @@ body{
       padding-right: 0;
     }
   }
-  h4.heading{
-    text-align: right;
+
+  #externals{
+    img{
+      height: 40px;
+    }
   }
 
+  footer p{
+    font-size: 1.5em;
+  }
 
 
 }

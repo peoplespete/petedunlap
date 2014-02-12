@@ -16,16 +16,25 @@ block content
       //Content Slider
       .row
         .large-12.hide-for-small
-          #featured(data-orbit='data-orbit')
-            img(src='/images/grocery.png', alt='Grocery List Maker')
-            img(src='/images/calendar.png', alt='Grocery List Maker')
-            img(src='/images/grocery.png', alt='Grocery List Maker')
-            img(src='/images/grocery.png', alt='Grocery List Maker')
+          #featured(data-orbit='data-orbit', data-options="resume_on_mouseout: true; timer_speed: 3000;")
+            //- data-orbit data-options="animation_speed:1500;"
+            a(href='http://fix_my_cat.petedunlap.com/', target='_blank')
+              img(src='/images/fix.png', alt='Grocery List Maker')
+            a(href='http://grocery_list_maker.petedunlap.com/', target='_blank')
+              img(src='/images/grocery.png', alt='Grocery List Maker')
+            a(href='http://calendar.petedunlap.com/', target='_blank')
+              img(src='/images/calendar.png', alt='Grocery List Maker')
+            a(href='http://digital_droppings.petedunlap.com/', target='_blank')
+              img(src='/images/digital.png', alt='Grocery List Maker')
+            a(href='http://question_generator.petedunlap.com/', target='_blank')
+              img(src='/images/question.png', alt='Grocery List Maker')
+            a(href='http://memory.petedunlap.com/', target='_blank')
+              img(src='/images/memory.png', alt='Grocery List Maker')
       //End Content Slider
       //Mobile Header
       .row
         .large-12.columns.show-for-small
-          img(src='http://placehold.it/1200x700&text=Mobile Header')
+          img(src='/images/question.png')
       br
       //End Mobile Header
       .row
@@ -36,12 +45,8 @@ block content
               h4.heading about pete
               hr
               .panel
-                h5
-                  a(href='#') Post Title 1
                 h6.subheader
-                  | Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
-                h6
-                  a(href='#') Read More »
+                  | Having walked and biked the continental usa, taught physics in three and a half countries, Pete recently settled in the Nashville area where he has been studying computer science.
             //End Shows
             //Image
             #headshot.large-2.small-6.columns
@@ -49,22 +54,11 @@ block content
             //End Image
             //Feed
             #philosophy.large-5.small-12.columns
-              h4 philosophy
+              h4.heading philosophy
               hr
               .panel
-                h5
-                  a(href='#') Post Title 1
                 h6.subheader
-                  | Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
-                h6
-                  a(href='#') Read More »
-              //- .panel.hide-for-small
-              //-   h5
-              //-     a(href='#') Post Title 2 »
-              //- .panel.hide-for-small
-              //-   h5
-              //-     a(href='#') Post Title 3 »
-              //- a.right(href='#') Go To Blog »
+                  | Technology should make your life richer.  I'm driven by the need for simple, usable software to create applications that help you stay sane in a fast, full world.
             //End Feed
       //End Content
       //Footer
@@ -75,13 +69,16 @@ block content
             .large-6.columns
               p © Copyright 2014 Pete Dunlap.
             .large-6.small-12.columns
-              ul.inline-list.right
+              ul#externals.inline-list.right
                 li
-                  a(href='https://github.com/peoplespete', target='_blank') GITHUB LINK
+                  a(href='https://github.com/peoplespete', target='_blank')
+                    img(src='/images/github.png')
                 li
-                  a(href='http://www.linkedin.com/in/petedunlap1', target='_blank') LINKED IN LINK
+                  a(href='http://www.linkedin.com/in/petedunlap1', target='_blank')
+                    img(src='/images/linked.png')
                 li
-                  a(href='mailto:petedunlap@gmail.com', target='_blank') GMAIL
+                  a(href='mailto:petedunlap@gmail.com', target='_blank')
+                    img(src='/images/gmail.png')
   //-     //
   //-        End Footer
   //- script
