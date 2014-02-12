@@ -18,8 +18,8 @@ require('./config').initialize(app, RedisStore);
 app.get('/', home.index);
 
 // start server & socket.io
-var common = require('./sockets/common');
+// var common = require('./sockets/common');
 var server = require('http').createServer(app);
-var io = require('socket.io').listen(server, {log: true, 'log level': 2});
+// var io = require('socket.io').listen(server, {log: true, 'log level': 2});
 server.listen(app.get('port'));
-io.of('/app').on('connection', common.connection);
+// io.of('/app').on('connection', common.connection);
