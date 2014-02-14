@@ -15,30 +15,19 @@ body{
   background: url('/images/background.png');
   background-repeat: no-repeat;
 
-  #navigation{
-      background: rgba(255, 255, 255, 0.5);
-      // background-color: rgba(150, 150, 150, 1);
-      height: 70px;
-    // .top-bar{
-    //   background: rgba(255, 255, 255, 0.5);
-    //   // background-color: rgba(150, 150, 150, 1);
-    // }
-    a{
-      padding-top: 20px;
-      font-size: 1em;
-      font-weight: bold;
-      color: pink;
+  header{
+    display: none;
+      #navigation{
+        background: rgba(255, 255, 255, 0.5);
+        height: 70px;
+        text-align: center;
     }
   }
+
   #main{
-    margin-top: 70px;
     background: rgba(255, 255, 255, 0.5);
     .heading{
-      font-size: 3em;
-      font-weight: bold;
-    }
-    h6{
-      font-size: 2em;
+      font-size: 4em;
     }
     #about_pete{
       h4.heading{
@@ -46,10 +35,13 @@ body{
       }
       h6.subheader{
         text-align: right;
+        font-size: 2em;
       }
     }
     #philosophy{
-
+      h6.subheader{
+        font-size: 2em;
+      }
     }
     #headshot{
       text-align: center;

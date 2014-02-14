@@ -2,17 +2,17 @@ extends ../template/layout
 
 block content
   //Navigation
-  #navigation.fixed.contain-to-grid
+  header.hidden
+    //-   .hidden
     nav
-      //.top-bar(data-topbar='data-topbar')
-      ul.title-area
-        //Title Area
-        li.name
+      //-.top-bar(data-topbar='data-topbar')
+      #navigation.row
+        .large-12.columns
           h1
-            a(href='#')
-              | petedunlap.com -code like you mean it
+            a(href='/')
+              img(src='/images/header.png')
   //End Top Bar
-  #main.row
+  section#main.row
     .large-12.columns
       //Content Slider
       .row
