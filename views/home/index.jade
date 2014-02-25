@@ -1,18 +1,7 @@
 extends ../template/layout
 
 block content
-  //Navigation
-  header.hidden
-    //-   .hidden
-    nav
-      //-.top-bar(data-topbar='data-topbar')
-      #navigation.row
-        .large-12.columns
-          h1
-            a(href='/')
-              img(src='/images/header.png')
-  //End Top Bar
-  section#main.row
+  section.main.row
     .large-12.columns
       //Content Slider
       .row
@@ -61,22 +50,3 @@ block content
                   | Technology should make your life richer.  I'm driven by the need for simple, usable software to create applications that help you stay sane in a fast, full world.
             //End Feed
       //End Content
-      //Footer
-      footer.row
-        .large-12.columns
-          hr
-          .row
-            .large-6.columns
-              p © Copyright 2014 Pete Dunlap.
-            .large-6.small-12.columns
-              ul#externals.inline-list.right
-                li
-                  a(href='https://github.com/peoplespete', target='_blank')
-                    img(src='/images/github.png')
-                li
-                  a(href='http://www.linkedin.com/in/petedunlap1', target='_blank')
-                    img(src='/images/linked.png')
-                li
-                  a(href='mailto:petedunlap@gmail.com', target='_blank')
-                    img(src='/images/gmail.png')
-         //- End Footer
