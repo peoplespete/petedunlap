@@ -11,10 +11,6 @@ body{
     font-family: 'Sue Ellen Francisco', cursive;
   }
 
-  // background-color: @base;
-  background: url('/images/background.png');
-  background-repeat: repeat-y;
-
   header{
     display: none;
       #navigation{
@@ -48,6 +44,7 @@ body{
       padding-left: 0;
       padding-right: 0;
     }
+
   }
 
   #externals{
@@ -61,8 +58,20 @@ body{
   }
 }
 
+.style1{
+  background-color: @base;
+  background: url('/images/background.png');
+}
+
 
 // digital_droppings
+
+
+.style2{
+  background: url('/images/digital_droppings_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 #my_digital_droppings{
   text-align: center;
@@ -78,4 +87,7 @@ body{
 
 .center{
   text-align: center;
+  img{
+    height: 100px;
+  }
 }

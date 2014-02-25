@@ -4,4 +4,7 @@ header.hidden
       .large-12.columns
         h1
           a(href='/')
-            img(src='/images/header.png')
+            if title == "Pete Dunlap"
+              img(src='/images/header.png')
+            else
+              img(src='/images/header2.png')
